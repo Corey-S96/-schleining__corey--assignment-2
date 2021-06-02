@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+}
+
+.mainHeader {
+    position: absolute;
+    left: 50px;
+    top: 50px;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(50deg, rgb(61, 124, 153) 50%, rgb(66, 65, 68) 50%);
+}
+
+
+.container {
+    height: 450px;
+    width: 330px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rbga(0, 0, 0, 0.5);
+    padding: 10px;
+    overflow-y: auto;
+}
+
+#input {
+    height: 50px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 25px;
+    background: rgb(0, 0, 0);
+    color: #fff;
+    padding: 0 10px;
+    margin: 15px 0;
+}
+
+#input::placeholder {
+    color: #bbb;
+}
+
+/* checkmark and X buttons START */
+ul li {
+    background: #eee;
+    height: 45px;
+    border-radius: 50px;
+    margin: 15px 0;
+    padding: 10px;
+    position: relative;
+    font-size: 18px;
+
+}
+
+ul .lni-checkmark-circle, .lni-cross-circle {
+    position: absolute;
+    cursor: pointer;
+}
+
+ul .lni-checkmark-circle {
+    right: 40px;
+    color: green;
+}
+
+ul .lni-cross-circle {
+    right: 15px;
+    color: red;
+}
+
+ul .checked {
+    background: gray;
+    text-decoration: line-through;
+    transition: 0.5s;
+}
+/* checkmark and X buttons END */
